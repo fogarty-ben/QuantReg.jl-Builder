@@ -2,7 +2,7 @@ quantregjl: rqbr.f rqfnb.f
 	gfortran rqbr.f rqfnb.f --shared  -o quantregjl.o -fPIC -std=legacy
 
 ifeq ($(PREFIX),)
-    PREFIX := /usr/local
+	PREFIX := /usr/local
 endif
 
 install: quantregjl.o
